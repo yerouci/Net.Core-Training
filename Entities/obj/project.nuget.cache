@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KR58A/ivI3QmM6rGragNz7n3PsuXGGpuaTM9nJy94MI82iT9F6AijDmDZUKg9eRZCCVljILGrqXcUQig1v3jWQ==",
+  "dgSpecHash": "c5ya+eLo01qCNFd4/0h7DTedHBwbFYvx2DALgUgLNr34DFdeqZ32CCfwF9vYns0XV4KPCxOSQzknhgng/C+jMg==",
   "success": true,
-  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\Entities\\Entities.csproj",
+  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\y.vazquez\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

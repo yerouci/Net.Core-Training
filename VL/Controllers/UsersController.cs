@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LoggerService;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,12 @@ namespace VL.Controllers
     [ApiController]
     [Route("api/v1.0/library/[controller]")]
     public class UsersController : Controller
-    {        
+    {
+        private ILoggerManager _logger;
 
-        private readonly ILogger<UsersController> _logger;
-
-        public UsersController(ILogger<UsersController> logger)
+        public UsersController(ILoggerManager logger)
         {
-            _logger = logger;
+            _logger = logger;            
         }
 
         [HttpGet]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vGdQrB85fzAyXX5s2sFDoUbmnMnqiEXeg0BXaHoPSA28BTET6ph9l2sDAnFTCzUptT+/A2fUDO66BH7q/f0NSg==",
+  "dgSpecHash": "WJLJSB4tH8/8iYVxtLWZIj7NN4u7dHIJBN+EgFECbjnyurQcbyJVL31omqENtho/i/LFEWBA90RP3h+zwcMDRA==",
   "success": true,
-  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\MailingService\\MailingService.csproj",
+  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -7,10 +7,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using VL.Extensions;
 
 namespace VL
 {
@@ -18,6 +21,7 @@ namespace VL
     {
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -26,10 +30,13 @@ namespace VL
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.ConfigureLoggerService();
 
-            string dbConnectionString = Configuration.GetConnectionString("VLDBConnectionString");
-            services.AddDbContext<VLDBContext>(options => options.UseSqlServer(dbConnectionString, b => b.MigrationsAssembly("VL")));
+            services.ConfigureSqlContext(Configuration);
+
+            services.ConfigureServices();
+
+            services.AddControllers();            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

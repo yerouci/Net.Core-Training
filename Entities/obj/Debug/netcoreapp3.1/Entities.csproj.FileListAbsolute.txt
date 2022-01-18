@@ -9,3 +9,15 @@ F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\
 F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
 F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+F:\WORK\MAIN\BACKEND_TEST\Raudel\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache

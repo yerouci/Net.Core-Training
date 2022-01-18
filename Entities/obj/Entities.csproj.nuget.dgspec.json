@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\Entities\\Entities.csproj": {}
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\Entities\\Entities.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\Entities\\Entities.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\Entities\\Entities.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL\\Net.Core-Training\\Entities\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
