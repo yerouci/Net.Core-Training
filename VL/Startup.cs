@@ -1,6 +1,8 @@
+using Entities.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +27,9 @@ namespace VL
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            string dbConnectionString = Configuration.GetConnectionString("VLDBConnectionString");
+            services.AddDbContext<VLDBContext>(options => options.UseSqlServer(dbConnectionString, b => b.MigrationsAssembly("VL")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
