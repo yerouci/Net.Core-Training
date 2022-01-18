@@ -1,0 +1,8 @@
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\bin\Debug\netcoreapp3.1\MailingService.deps.json
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\bin\Debug\netcoreapp3.1\MailingService.dll
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\bin\Debug\netcoreapp3.1\MailingService.pdb
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.AssemblyInfoInputs.cache
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.AssemblyInfo.cs
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.csproj.CoreCompileInputs.cache
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.dll
+F:\WORK\MAIN\BACKEND_TEST\VL\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.pdb

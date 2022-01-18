@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Entities.Models
+namespace Entities
 {
     /// <summary>
     /// The class that Manage teh DB
