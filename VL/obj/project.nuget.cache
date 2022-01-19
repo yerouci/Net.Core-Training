@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WlplehWy9pEkrVNue+eok4M6xkGLjcoRd/SR++t+/XxMZkMh/46YpXG06qcL86eIaQax/H+T/r6v9t6TwJTYjw==",
+  "dgSpecHash": "FYF7ErhPY4r8YZnVff6GdeY0MtZ1gaUUcJS8CIWJa0qd1/Q8jmbiH/nOaWP0OPHfw9YfXjCvZeQ+GwgIDXtrDQ==",
   "success": true,
   "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\VL\\VL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\y.vazquez\\.nuget\\packages\\dynamicexpression\\2.2.1\\dynamicexpression.2.2.1.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -59,6 +60,7 @@
     "C:\\Users\\y.vazquez\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\y.vazquez\\.nuget\\packages\\system.linq.dynamic.core\\1.2.15\\system.linq.dynamic.core.1.2.15.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",

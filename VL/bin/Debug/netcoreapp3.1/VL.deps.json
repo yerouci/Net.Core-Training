@@ -36,6 +36,7 @@
           "MailingService": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.13",
           "Newtonsoft.Json": "13.0.1",
+          "System.Linq.Dynamic.Core": "1.2.15",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -312,6 +313,17 @@
         },
         "compile": {
           "VL.dll": {}
+        }
+      },
+      "DynamicExpression/2.2.1": {
+        "runtime": {
+          "lib/netstandard2.1/DynamicExpression.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/DynamicExpression.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -967,6 +979,17 @@
           "System.Runtime.Extensions": "4.3.0"
         }
       },
+      "System.Linq.Dynamic.Core/1.2.15": {
+        "runtime": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.15.0",
+            "fileVersion": "1.2.15.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll": {}
+        }
+      },
       "System.Net.NameResolution/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1337,6 +1360,7 @@
       },
       "Entities/1.0.0": {
         "dependencies": {
+          "DynamicExpression": "2.2.1",
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13"
         },
@@ -2994,6 +3018,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DynamicExpression/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9tlCIZw/D7fulOBVRM6ANmAzd6uuh6yrLB5wD1ydclWR4tL3ZOVGsPJcbN5rKZpQAwo7q338/Om4pxX63FxhCA==",
+      "path": "dynamicexpression/2.2.1",
+      "hashPath": "dynamicexpression.2.2.1.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -3378,6 +3409,13 @@
       "sha512": "sha512-5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.2.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-46PeyhpG36FWBFShRlmumMWGqdUd8SA+NMd/DwnGzkHY3SzFPAILndgViRzcUtsHhqGBrMOI0aqhpm0u9JAitg==",
+      "path": "system.linq.dynamic.core/1.2.15",
+      "hashPath": "system.linq.dynamic.core.1.2.15.nupkg.sha512"
     },
     "System.Net.NameResolution/4.3.0": {
       "type": "package",

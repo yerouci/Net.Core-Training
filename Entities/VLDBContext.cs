@@ -35,8 +35,8 @@ namespace Entities
             modelBuilder.Entity<Author>().HasData(
             new Author { Id=1, Name = "Ernest Hemingway", Nationality = "Estadounidense", DateOfBirth= new DateTime(1899,6,21) },
             new Author { Id = 2, Name = "Edgar Allan Poe", Nationality = "Estadounidense", DateOfBirth = new DateTime(1809, 1, 19) }
-            );
-            
+            );           
+
         }
 
     }

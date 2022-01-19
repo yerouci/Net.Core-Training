@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "DynamicExpression/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/DynamicExpression.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/DynamicExpression.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -1524,6 +1533,23 @@
     }
   },
   "libraries": {
+    "DynamicExpression/2.2.1": {
+      "sha512": "9tlCIZw/D7fulOBVRM6ANmAzd6uuh6yrLB5wD1ydclWR4tL3ZOVGsPJcbN5rKZpQAwo7q338/Om4pxX63FxhCA==",
+      "type": "package",
+      "path": "dynamicexpression/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "dynamicexpression.2.2.1.nupkg.sha512",
+        "dynamicexpression.nuspec",
+        "icon.jpg",
+        "lib/netstandard2.0/DynamicExpression.dll",
+        "lib/netstandard2.0/DynamicExpression.xml",
+        "lib/netstandard2.1/DynamicExpression.dll",
+        "lib/netstandard2.1/DynamicExpression.xml"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -5792,6 +5818,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DynamicExpression >= 2.2.1",
       "Microsoft.EntityFrameworkCore >= 5.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.13"
@@ -5840,6 +5867,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "DynamicExpression": {
+            "target": "Package",
+            "version": "[2.2.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.13, )"

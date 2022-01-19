@@ -23,6 +23,9 @@ namespace Entities.Models
         public int Pages { get; set; }
 
         [Required]
+        public DateTime Date { get; set; }
+
+        [Required]
         public string URL { get; set; }
 
         [Required]

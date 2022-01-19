@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entities.Models
 {
-	public class QueryStringParameters
+	public abstract class QueryStringParameters
 	{
 		const int maxPageSize = 50;
 		public int Offset { get; set; } = 1;

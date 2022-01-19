@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v3.1": {
       "Entities/1.0.0": {
         "dependencies": {
+          "DynamicExpression": "2.2.1",
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.13"
         },
         "runtime": {
           "Entities.dll": {}
+        }
+      },
+      "DynamicExpression/2.2.1": {
+        "runtime": {
+          "lib/netstandard2.1/DynamicExpression.dll": {
+            "assemblyVersion": "2.2.1.0",
+            "fileVersion": "2.2.1.0"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -1089,6 +1098,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DynamicExpression/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9tlCIZw/D7fulOBVRM6ANmAzd6uuh6yrLB5wD1ydclWR4tL3ZOVGsPJcbN5rKZpQAwo7q338/Om4pxX63FxhCA==",
+      "path": "dynamicexpression/2.2.1",
+      "hashPath": "dynamicexpression.2.2.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

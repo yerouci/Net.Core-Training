@@ -18,7 +18,7 @@ namespace VL.Services
             dbcontext = _dbcontext;
         }
 
-        public async Task<PagedList<Author>> GetAuthors(QueryStringParameters queryParameters)
+        public async Task<PagedList<Author>> GetAuthors(AuthorParameters queryParameters)
         {
             return await PagedList<Author>.ToPagedList(dbcontext.Authors,
                 queryParameters.Offset,
