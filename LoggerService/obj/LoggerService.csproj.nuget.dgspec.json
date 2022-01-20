@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj": {}
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj": {}
   },
   "projects": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

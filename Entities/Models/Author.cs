@@ -22,5 +22,7 @@ namespace Entities.Models
 
         [Required]
         public DateTime DateOfBirth { get; set; }
+
+        public ICollection<User> Users { get; set; }
     }
 }

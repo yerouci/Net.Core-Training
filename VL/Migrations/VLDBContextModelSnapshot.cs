@@ -19,6 +19,21 @@ namespace VL.Migrations
                 .HasAnnotation("ProductVersion", "5.0.13")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("AuthorUser", b =>
+                {
+                    b.Property<int>("AuthorsId")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("UsersId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("AuthorsId", "UsersId");
+
+                    b.HasIndex("UsersId");
+
+                    b.ToTable("AuthorUser");
+                });
+
             modelBuilder.Entity("Entities.Models.Author", b =>
                 {
                     b.Property<int>("Id")
@@ -60,8 +75,10 @@ namespace VL.Migrations
 
             modelBuilder.Entity("Entities.Models.Book", b =>
                 {
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("AuthorId")
                         .HasColumnType("int");
@@ -83,11 +100,14 @@ namespace VL.Migrations
                     b.Property<int>("Qualification")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("URL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Title");
+                    b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
 
@@ -100,6 +120,9 @@ namespace VL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("BookId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -115,6 +138,8 @@ namespace VL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BookId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("review");
@@ -125,6 +150,9 @@ namespace VL.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -140,6 +168,61 @@ namespace VL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("user");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("ad3a09d1-9e45-4256-a3a1-9df71226375d"),
+                            CreatedAt = new DateTime(2022, 1, 20, 14, 55, 36, 596, DateTimeKind.Utc).AddTicks(7391),
+                            Email = "user1@gmail.com",
+                            ImageURL = "http://user1Image.com/image.jpg",
+                            Name = "User1"
+                        },
+                        new
+                        {
+                            Id = new Guid("e8a7d9e8-bbb3-44f2-b968-368cbbfc23c0"),
+                            CreatedAt = new DateTime(2022, 1, 20, 14, 55, 36, 596, DateTimeKind.Utc).AddTicks(7940),
+                            Email = "user2@gmail.com",
+                            Name = "User2"
+                        },
+                        new
+                        {
+                            Id = new Guid("ded8654d-628f-4302-9b21-bba8b1f32186"),
+                            CreatedAt = new DateTime(2022, 1, 20, 14, 55, 36, 596, DateTimeKind.Utc).AddTicks(7948),
+                            Email = "user3@gmail.com",
+                            ImageURL = "http://user3Image.com/image.jpg",
+                            Name = "User3"
+                        },
+                        new
+                        {
+                            Id = new Guid("4125cf02-a9b1-428c-a388-4a40fbf0def6"),
+                            CreatedAt = new DateTime(2022, 1, 20, 14, 55, 36, 596, DateTimeKind.Utc).AddTicks(7954),
+                            Email = "user4@gmail.com",
+                            ImageURL = "http://user4Image.com/image.jpg",
+                            Name = "User4"
+                        },
+                        new
+                        {
+                            Id = new Guid("86402e28-f9d9-4e76-8cb2-1a8fbc390e45"),
+                            CreatedAt = new DateTime(2022, 1, 20, 14, 55, 36, 596, DateTimeKind.Utc).AddTicks(7965),
+                            Email = "user5@gmail.com",
+                            Name = "User5"
+                        });
+                });
+
+            modelBuilder.Entity("AuthorUser", b =>
+                {
+                    b.HasOne("Entities.Models.Author", null)
+                        .WithMany()
+                        .HasForeignKey("AuthorsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entities.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Entities.Models.Book", b =>
@@ -153,11 +236,20 @@ namespace VL.Migrations
 
             modelBuilder.Entity("Entities.Models.Review", b =>
                 {
+                    b.HasOne("Entities.Models.Book", null)
+                        .WithMany("Reviews")
+                        .HasForeignKey("BookId");
+
                     b.HasOne("Entities.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Entities.Models.Book", b =>
+                {
+                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

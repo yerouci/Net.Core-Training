@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj",
+      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj",
       "projectName": "MailingService",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj",
+      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj",
       "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\obj\\",
+      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

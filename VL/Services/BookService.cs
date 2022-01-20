@@ -13,23 +13,26 @@ using System.Text;
 using System.Threading.Tasks;
 using VL.Contracts;
 using System.Linq.Dynamic.Core;
+using AutoMapper;
 
 namespace VL.Services
 {
     public class BookService : IBookService
     {
         private ILoggerManager _logger;
-        protected VLDBContext dbcontext { get; set; }
+        protected VLDBContext _dbcontext { get; set; }
+        private readonly IMapper _mapper;
 
-        public BookService(VLDBContext _dbcontext, ILoggerManager logger)
+        public BookService(VLDBContext dbcontext, ILoggerManager logger, IMapper mapper)
         {
-            dbcontext = _dbcontext;
+            this._dbcontext = dbcontext;
             _logger = logger;
+            _mapper = mapper;
         }
 
         public async Task<Object> GetBooks(BookParameters queryParameters)
         {
-            var query = dbcontext.Books.Select(s => new BookDTO
+            var query = _dbcontext.Books.Select(s => new BookDTO
             {
                 Title = s.Title,
                 AuthorName = s.Author.Name,
@@ -75,5 +78,44 @@ namespace VL.Services
                 })
             };
         }
+
+
+        public async Task<bool> AddReview(int bookId, string userId, ReviewInputDTO input) 
+        {
+            var review = _mapper.Map<Review>(input);
+
+            var user = _dbcontext.Users.Where(w => w.Id.Equals(userId)).FirstOrDefault();
+
+            review.Date = DateTime.UtcNow;
+            review.User = user;
+
+            var result = await _dbcontext.Reviews.AddAsync(review);
+
+            var book = _dbcontext.Books.Find(bookId);
+            
+            if (book.Reviews.ToList() == null)
+            {
+                book.Reviews = new List<Review>();
+            }
+            book.Reviews.Add(result.Entity);
+            book.Qualification = CalculateQualification(book.Reviews);
+            _dbcontext.Books.Update(book);
+
+            _dbcontext.SaveChanges();
+
+            return true;
+        }
+
+        private int CalculateQualification(ICollection<Review> reviews) 
+        {
+            int aux = 0;
+            foreach (var review in reviews)
+            {
+                aux += (int)review.Qualification;
+            }
+
+            return aux / reviews.Count;
+        }
+
     }
 }

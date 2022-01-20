@@ -1,13 +1,12 @@
-﻿using Entities;
+﻿using AutoMapper;
+using Entities;
+using Entities.Mappings;
 using LoggerService;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using VL.Contracts;
 using VL.Services;
 
@@ -29,8 +28,20 @@ namespace VL.Extensions
 
         public static void ConfigureServices(this IServiceCollection services)
         {
+            var mapperConfig = new MapperConfiguration(m =>
+            {
+                m.AddProfile(new UserProfile());
+                m.AddProfile(new BookProfile());
+                m.AddProfile(new AuthorProfile());
+                m.AddProfile(new ReviewProfile());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IUserService, UserService>();
         }
     }
 }

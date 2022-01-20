@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Entities.ModelsDTO;
 using LoggerService;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -27,6 +28,27 @@ namespace VL.Controllers
         {
             var authors = await _authorService.GetAuthors(queryParameters);
             return Ok(authors);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddAuthor([FromBody] AuthorInputDTO input)
+        {
+            var author = await _authorService.AddAuthor(input);
+            return Ok(author);
+        }
+
+        [HttpPost("{authorId}/books")]
+        public async Task<IActionResult> AddBook([FromRoute] int authorId, [FromBody] BookInputDTO input)
+        {
+            var book = await _authorService.AddNewBook(authorId, input);
+            return Ok(book);
+        }
+
+        [HttpGet("{authorId}")]
+        public async Task<IActionResult> GetAuthorDetails([FromRoute] int authorId)
+        {
+            var author = await _authorService.GetAuthorDetails(authorId);
+            return Ok(author);
         }
     }
 }

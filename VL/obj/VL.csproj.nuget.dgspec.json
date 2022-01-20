@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\VL\\VL.csproj": {}
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj": {}
   },
   "projects": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "DynamicExpression": {
               "target": "Package",
               "version": "[2.2.1, )"
@@ -81,14 +89,14 @@
         }
       }
     },
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -144,14 +152,14 @@
         }
       }
     },
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj",
         "projectName": "MailingService",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -201,14 +209,14 @@
         }
       }
     },
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\VL\\VL.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\VL\\VL.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj",
         "projectName": "VL",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\VL\\VL.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\VL\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -228,14 +236,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj": {
-                "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\Entities\\Entities.csproj"
+              "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj": {
+                "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj"
               },
-              "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj": {
-                "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\LoggerService\\LoggerService.csproj"
+              "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj"
               },
-              "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj": {
-                "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Raudel\\MailingService\\MailingService.csproj"
+              "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj": {
+                "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj"
               }
             }
           }
@@ -255,6 +263,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

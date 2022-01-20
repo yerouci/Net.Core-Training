@@ -10,7 +10,10 @@ namespace Entities.Models
     [Table("book")]
     public class Book
     {
-        [Key]        
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; } 
+         
         public string Title { get; set; }
 
         [Required]
@@ -32,5 +35,7 @@ namespace Entities.Models
         public string ISBN { get; set; }
 
         public int Qualification { get; set; }
+
+        public ICollection<Review> Reviews { get; set; }
     }
 }

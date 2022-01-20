@@ -21,5 +21,10 @@ namespace Entities.Models
         public string Email { get; set; }
 
         public string ImageURL { get; set; }
+
+        [Required]
+        public DateTime CreatedAt { get; set; }
+
+        public ICollection<Author> Authors { get; set; }
     }
 }

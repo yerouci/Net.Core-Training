@@ -11,5 +11,6 @@ namespace VL.Contracts
     public interface IBookService
     {
         Task<Object> GetBooks(BookParameters bookParameters);
+        Task<bool> AddReview(int bookId, string userId, ReviewInputDTO input);        
     }
 }

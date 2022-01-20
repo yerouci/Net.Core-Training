@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Entities.ModelsDTO;
 using LoggerService;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -25,11 +26,18 @@ namespace VL.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllBooks([FromQuery] BookParameters queryParameters)
         {
-            var authors = await _bookService.GetBooks(queryParameters);
+            var books = await _bookService.GetBooks(queryParameters);
 
-            _logger.LogInfo($"Response: { authors } ");
+            _logger.LogInfo($"Response: { books } ");
 
-            return Ok(authors);
+            return Ok(books);
+        }
+
+        [HttpPost("{bookId}/reviews/from/users/{userId}")]
+        public async Task<IActionResult> AddReview([FromRoute] int bookId, [FromRoute] string userId, [FromBody] ReviewInputDTO input)
+        {
+            var result = await _bookService.AddReview(bookId, userId, input);
+            return Ok(result);
         }
     }
 }
