@@ -5,11 +5,10 @@ using System.Text;
 namespace Entities.ModelsDTO
 {
     public class AuthorDTO
-    {
-        public int Id { get; set; }        
+    {        
         public string Name { get; set; }        
         public string Nationality { get; set; }        
         public DateTime DateOfBirth { get; set; }
-        public List<UserDTO> Users { get; set; }
+        
     }
 }

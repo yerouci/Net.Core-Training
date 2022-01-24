@@ -15,6 +15,6 @@ namespace Entities.ModelsDTO
 
         public int SubscribedUsersAmount { get; set; }
 
-        public List<BookDTO> Books { get; set; }
+        public List<BookDetailsDTO> Books { get; set; }
     }
 }

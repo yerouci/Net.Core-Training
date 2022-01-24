@@ -7,12 +7,3 @@ F:\WORK\MAIN\BACKEND_TEST\VL2\LoggerService\obj\Debug\netcoreapp3.1\LoggerServic
 F:\WORK\MAIN\BACKEND_TEST\VL2\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CoreCompileInputs.cache
 F:\WORK\MAIN\BACKEND_TEST\VL2\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
 F:\WORK\MAIN\BACKEND_TEST\VL2\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.deps.json
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.dll
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.pdb
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.AssemblyReference.cache
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfoInputs.cache
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfo.cs
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CoreCompileInputs.cache
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
-F:\WORK\MAIN\BACKEND_TEST\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb

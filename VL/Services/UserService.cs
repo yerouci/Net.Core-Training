@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Entities;
 using Entities.Models;
 using Entities.ModelsDTO;
@@ -78,7 +79,23 @@ namespace VL.Services
 
         public async Task<UserDTO> GetById(string userId)
         {
-            var response = await _dbcontext.Users.FindAsync(Guid.Parse(userId));
+            var response = await _dbcontext.Users
+                .Where(w => w.Id.Equals(Guid.Parse(userId)))
+                .Select(s => new UserDTO
+                {
+                    Id = s.Id,
+                    Name = s.Name,                    
+                    CreatedAt = s.CreatedAt,
+                    Email = s.Email,
+                    ImageURL = s.ImageURL,
+                    Authors = s.Authors.Select(q=> new AuthorDTO { 
+                        Name = q.Name,
+                        DateOfBirth = q.DateOfBirth,
+                        Nationality = q.Nationality
+                    }).ToList()
+                })
+                .FirstOrDefaultAsync();
+
             if (response == null)
             {
                 _logger.LogError($"Error: An unexpected error occurred at trying to get the user with ID: {userId}.");

@@ -13,6 +13,6 @@ namespace VL.Contracts
         Task<PagedList<Author>> GetAuthors(AuthorParameters bookParameters);
         Task<Author> AddAuthor(AuthorInputDTO input);
         Task<AuthorDetailsDTO> GetAuthorDetails(int id);
-        Task<bool> AddNewBook(int id, BookInputDTO input);
+        Task<BookDTO> AddNewBook(int id, BookInputDTO input);
     }
 }
