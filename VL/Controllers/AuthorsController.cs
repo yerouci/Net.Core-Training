@@ -23,6 +23,11 @@ namespace VL.Controllers
             _authorService = authorService;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="offset">Cantidad a Ignorar</param>
+        /// <param name="limit">Cantidad a Devolver</param>
         [HttpGet]
         public async Task<IActionResult> GetAllAuthors([FromQuery] AuthorParameters queryParameters)
         {

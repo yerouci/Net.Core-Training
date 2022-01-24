@@ -435,3 +435,8 @@ F:\WORK\MAIN\BACKEND_TEST\VL2\VL\obj\Debug\netcoreapp3.1\VL.csproj.CopyComplete
 F:\WORK\MAIN\BACKEND_TEST\VL2\VL\obj\Debug\netcoreapp3.1\VL.dll
 F:\WORK\MAIN\BACKEND_TEST\VL2\VL\obj\Debug\netcoreapp3.1\VL.pdb
 F:\WORK\MAIN\BACKEND_TEST\VL2\VL\obj\Debug\netcoreapp3.1\VL.genruntimeconfig.cache
+F:\WORK\MAIN\BACKEND_TEST\VL2\VL\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\WORK\MAIN\BACKEND_TEST\VL2\VL\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\WORK\MAIN\BACKEND_TEST\VL2\VL\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\WORK\MAIN\BACKEND_TEST\VL2\VL\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\WORK\MAIN\BACKEND_TEST\VL2\VL\obj\Debug\netcoreapp3.1\VL.MvcApplicationPartsAssemblyInfo.cs
