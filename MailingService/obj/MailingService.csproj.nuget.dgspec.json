@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj": {}
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj": {}
   },
   "projects": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj": {
+    "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj",
+        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj",
         "projectName": "MailingService",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj",
+        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj",
         "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\obj\\",
+        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

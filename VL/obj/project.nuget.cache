@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LF/rHE/jdf9XowEURSamD7KSPUJamj7PurFr1TanPfCOHvm4xrPOMs4RgyKpCiXmGp9TmfONyBLXvvPm160ztw==",
+  "dgSpecHash": "qdqCe8e2/AKBhzABsNF2ZpSCte0tOTMeJHzTuVrVGWapFevSlgn0B3J/caAb5iJhTzOn4EUXKVrr7Bs2d8Chmg==",
   "success": true,
-  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj",
+  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\VL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\y.vazquez\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

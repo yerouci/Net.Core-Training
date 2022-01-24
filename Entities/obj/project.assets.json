@@ -5940,11 +5940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj",
+      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj",
+      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\obj\\",
+      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cQz7rgMP+aXb03XeIJRAdHLCYvOHcZQfPwg9v778vY7b+nyfNFePXlawFr0k0LbgB8C4M+Ez7sDdyTOGzQVH4A==",
+  "dgSpecHash": "Zqsf9VO3ChA6oshJ8OCAFW9EjzVVi+uHThsUzGwRX5G7VSfzpnrPC5PGu8K9uGwoLWwPRADBzf2p8AtYPS1sag==",
   "success": true,
-  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
+  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\y.vazquez\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.0\\microsoft.extensions.configuration.3.0.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",

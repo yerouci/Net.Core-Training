@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fetFYkfuzUREo7G//HlRDOmSh/Cmos30HnCRbl/I9pV2Q2yKaRDO7vp/lmMZVRWq53wlB3D0S9G4IAt94pzMkg==",
+  "dgSpecHash": "FnxD0brnAPUekEmCJxLvpEXQXOaYvuvQg+4DAtjdJoyBDCT3UZ/4XW8nzZANR/LCB8545F7KpyH+lgVUKoT2wA==",
   "success": true,
-  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj",
+  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\y.vazquez\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\y.vazquez\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

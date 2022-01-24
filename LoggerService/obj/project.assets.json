@@ -335,11 +335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
+      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj",
       "projectName": "LoggerService",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj",
+      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj",
       "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\obj\\",
+      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

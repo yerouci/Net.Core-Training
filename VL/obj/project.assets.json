@@ -9041,11 +9041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj",
+      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\VL.csproj",
       "projectName": "VL",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\VL.csproj",
+      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\VL.csproj",
       "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\VL\\obj\\",
+      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9065,14 +9065,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\Entities\\Entities.csproj"
+            "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj": {
+              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj"
             },
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\LoggerService\\LoggerService.csproj"
+            "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj"
             },
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\VL2\\MailingService\\MailingService.csproj"
+            "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj": {
+              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj"
             }
           }
         }
