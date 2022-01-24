@@ -16,6 +16,8 @@ namespace VL.Contracts
         Task<Object> GetAllUsers(UserParameters queryParameters);
         Task<bool> SubscribeToAuthor(Guid userId, int authorId);
         Task<User> GetById(Guid userId);
+        Task<UserDTO> GetById(string userId);
         bool VerifyUsername(string username);
+        Task<bool> DeleteSubscriptionToAuthor(Guid userId, int authorId);
     }
 }

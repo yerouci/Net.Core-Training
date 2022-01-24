@@ -12,6 +12,7 @@ namespace Entities.Mappings
         public UserProfile()
         {
             CreateMap<User, UserInputDTO>().ReverseMap();
+            CreateMap<User, UserDTO>();
             CreateMap<User, UserListDTO>()
                 .ForMember(f => f.AuthorsAmount, opt => opt.MapFrom(s => s.Authors.Count))
                 .ReverseMap();

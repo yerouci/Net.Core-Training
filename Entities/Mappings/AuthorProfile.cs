@@ -12,7 +12,7 @@ namespace Entities.Mappings
         public AuthorProfile() 
         {
             CreateMap<Author, AuthorInputDTO>().ReverseMap();
-
+            CreateMap<Author, AuthorDTO>();
             CreateMap<Author, AuthorDetailsDTO>()
                 .ForMember(f => f.Name, opt => opt.MapFrom(m => m.Name))
                 .ForMember(f => f.DateOfBirth, opt => opt.MapFrom(m => m.DateOfBirth))
