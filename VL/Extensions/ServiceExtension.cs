@@ -2,6 +2,8 @@
 using Entities;
 using Entities.Mappings;
 using LoggerService;
+using MailingService.Contracts;
+using MailingService.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,6 +41,7 @@ namespace VL.Extensions
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            services.AddScoped<IEmailSender, EmailSender>();
             services.AddScoped<IAuthorService, AuthorService>();
             services.AddScoped<IBookService, BookService>();
             services.AddScoped<IUserService, UserService>();

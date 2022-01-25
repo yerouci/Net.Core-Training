@@ -34,6 +34,16 @@ namespace VL.Controllers
             return Ok(books);
         }
 
+        [HttpGet("{bookId}/reviews")]
+        public async Task<IActionResult> GetReviewsofBook([FromRoute] int bookId,[FromQuery] ReviewsParameters queryParameters)
+        {
+            var reviews = await _bookService.GetReviews(queryParameters,bookId);
+
+            _logger.LogInfo($"Response: { reviews } ");
+
+            return Ok(reviews);
+        }
+
         [HttpPost("{bookId}/reviews/from/users/{userId}")]
         public async Task<IActionResult> AddReview([FromRoute] int bookId, [FromRoute] string userId, [FromBody] ReviewInputDTO input)
         {

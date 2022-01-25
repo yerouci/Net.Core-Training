@@ -12,6 +12,10 @@ using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq.Dynamic.Core;
+using MailingService.Contracts;
+using Microsoft.Extensions.Options;
+using MailingService;
 
 namespace VL.Services
 {
@@ -21,12 +25,16 @@ namespace VL.Services
         protected VLDBContext _dbcontext { get; set; }
         private readonly IMapper _mapper;
         private readonly ILoggerManager _logger;
+        private readonly IEmailSender _emailService;
+        private readonly IOptions<EmailDefinition> _emailSettings;
 
-        public AuthorService(VLDBContext dbcontext, IMapper mapper, ILoggerManager logger)
+        public AuthorService(VLDBContext dbcontext, IMapper mapper, ILoggerManager logger, IEmailSender emailService, IOptions<EmailDefinition> emailSettings)
         {
             _dbcontext = dbcontext;
             _mapper = mapper;
             _logger = logger;
+            _emailService = emailService;
+            _emailSettings = emailSettings;
         }
 
         public async Task<PagedList<Author>> GetAuthors(AuthorParameters queryParameters)
@@ -102,6 +110,18 @@ namespace VL.Services
             {
                 var result = _dbcontext.Books.Add(book);
                 await _dbcontext.SaveChangesAsync();
+
+                /*Send notification email to all user suscribed*/
+                var usersSuscribed = await _dbcontext.Authors.Where(w => w.Id == id).Select(s => new { userEmailsList = s.Users.Select(u => u.Email) }).ToListAsync();
+
+                if(usersSuscribed.Count > 0)
+                {
+                    foreach (var userEmail in usersSuscribed[0].userEmailsList)
+                    {
+                        //Calling email sending simulator
+                        await _emailService.SendEmailAsync(_emailSettings.Value.SenderEmail, userEmail, _emailSettings.Value.Subject, "This is an Automatic email generated for the system in order to notify you of new book release.");
+                    }
+                }
 
                 return _mapper.Map<BookDTO>(result.Entity);
             }

@@ -1,4 +1,5 @@
 using Entities;
+using MailingService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -39,6 +40,7 @@ namespace VL
             });
 
             services.Configure<ErrorDefinition>(Configuration.GetSection("ErrorsHandling"));
+            services.Configure<EmailDefinition>(Configuration.GetSection("EmailSender"));
 
             services.ConfigureLoggerService();
 
