@@ -43,6 +43,7 @@ namespace VLTests
             var dbContexOoptions = new DbContextOptionsBuilder<VLDBContext>().UseInMemoryDatabase("VlDatabase").Options;
             _context = new VLDBContext(dbContexOoptions);
             _context.Database.EnsureCreated();
+           
         }
 
         #endregion
@@ -89,6 +90,9 @@ namespace VLTests
             // count =  results ;
 
             // assert
+            var okResult = Assert.IsType<OkObjectResult>(results);
+            var returnValue = Assert.IsType<List<User>>(okResult.Value);
+            Assert.Equal(5, returnValue.Count);
             Assert.Equal(10, 10);
         }
 
@@ -96,7 +100,7 @@ namespace VLTests
 
         #region DBContext and FakeData
 
-        private Mock<VLDBContext> CreateDbContext()
+        private Mock<VLDBContext> CreateDbContext1()
         {
             var persons = GetFakeData().AsQueryable().BuildMockDbSet();
 

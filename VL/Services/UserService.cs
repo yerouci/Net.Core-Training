@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
-using AutoMapper.QueryableExtensions;
 using Entities;
 using Entities.Models;
 using Entities.ModelsDTO;
+using LoggerService;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using VL.Contracts;
 using VL.Exceptions;
-using System.Net;
-using LoggerService;
 
 namespace VL.Services
 {
