@@ -17,21 +17,24 @@ namespace VL.Services
 {
     public class UserService : IUserService
     {
-        protected VLDBContext _dbcontext { get; set; }
+       // protected VLDBContext _dbcontext { get; set; }
         private readonly IMapper _mapper;
         private readonly ILoggerManager _logger;
+        private readonly IDbContextFactory<VLDBContext> _contextFactory;
 
-        public UserService(VLDBContext dbcontext, IMapper mapper, ILoggerManager logger)
+        public UserService(IDbContextFactory<VLDBContext> contextFactory, IMapper mapper, ILoggerManager logger)
         {
-            _dbcontext = dbcontext;
+            _contextFactory = contextFactory;
             _mapper = mapper;
             _logger = logger;
+
         }
 
         public async Task<User> Add(UserInputDTO input)
         {
             try
             {
+               var  _dbcontext = _contextFactory.CreateDbContext();
                 User item = _mapper.Map<User>(input);
 
                 item.Id = Guid.NewGuid();
@@ -51,6 +54,7 @@ namespace VL.Services
 
         public async Task<User> GetById(Guid userId)
         {
+            var _dbcontext = _contextFactory.CreateDbContext();
             var response = await _dbcontext.Users.FindAsync(userId);
 
             if (response == null)
@@ -64,6 +68,7 @@ namespace VL.Services
 
         private async Task<User> GetUserById(Guid userId)
         {
+            var _dbcontext = _contextFactory.CreateDbContext();
             var response = await _dbcontext.Users
                 .Where(w => w.Id.Equals(userId))
                 .Include(i => i.Authors)
@@ -79,6 +84,7 @@ namespace VL.Services
 
         public async Task<UserDTO> GetById(string userId)
         {
+            var _dbcontext = _contextFactory.CreateDbContext();
             var response = await _dbcontext.Users
                 .Where(w => w.Id.Equals(Guid.Parse(userId)))
                 .Select(s => new UserDTO
@@ -110,6 +116,7 @@ namespace VL.Services
         {
             try
             {
+                var _dbcontext = _contextFactory.CreateDbContext();
                 var entity = GetById(userId).Result;
                 _dbcontext.Entry<User>(entity).State = EntityState.Deleted;
                 await _dbcontext.SaveChangesAsync();
@@ -127,6 +134,7 @@ namespace VL.Services
         {
             try
             {
+                var _dbcontext = _contextFactory.CreateDbContext();
                 var user = GetById(userId).Result;
                 user.ImageURL = userImage.Url;
                 var result = _dbcontext.Users.Update(user).Entity;
@@ -145,6 +153,7 @@ namespace VL.Services
         {
             try
             {
+                var _dbcontext = _contextFactory.CreateDbContext();
                 var query = _dbcontext.Users.Select(s => new UserListDTO
                 {
                     Id = s.Id,
@@ -180,6 +189,7 @@ namespace VL.Services
 
         public async Task<bool> SubscribeToAuthor(Guid userId, int authorId)
         {
+            var _dbcontext = _contextFactory.CreateDbContext();
 
             var user = GetUserById(userId).Result;
 
@@ -214,7 +224,7 @@ namespace VL.Services
         public async Task<bool> DeleteSubscriptionToAuthor(Guid userId, int authorId)
         {
             var user = GetUserById(userId).Result;
-
+            var _dbcontext = _contextFactory.CreateDbContext();
             var author = user.Authors.FirstOrDefault(f => f.Id.Equals(authorId));
 
             if (author == null)
@@ -242,6 +252,7 @@ namespace VL.Services
 
         public bool VerifyUsername(string username) 
         {
+            var _dbcontext = _contextFactory.CreateDbContext();
             return _dbcontext.Users.Select(s => s.Name.Equals(username)).FirstOrDefault();            
         }
     }

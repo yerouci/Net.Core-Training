@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj": {}
+    "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj": {
+    "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-        "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\obj\\",
+        "projectPath": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Yunior\\.nuget\\packages\\",
+        "outputPath": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\y.vazquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yunior\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,12 +77,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

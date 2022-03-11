@@ -36,3 +36,16 @@ F:\WORK\MAIN\BACKEND_TEST\FromDevOps\Entities\obj\Debug\netcoreapp3.1\Entities.c
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache

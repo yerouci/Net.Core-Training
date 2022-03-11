@@ -265,6 +265,7 @@
           "System.Runtime.Handles.Reference": "5.0.0.0",
           "System.Runtime.InteropServices.Reference": "5.0.0.0",
           "System.Runtime.InteropServices.RuntimeInformation.Reference": "5.0.0.0",
+          "System.Runtime.Intrinsics": "5.0.0.0",
           "System.Runtime.Loader": "5.0.0.0",
           "System.Runtime.Numerics.Reference": "5.0.0.0",
           "System.Runtime.Serialization": "4.0.0.0",
@@ -4385,6 +4386,12 @@
         },
         "compileOnly": true
       },
+      "System.Runtime.Intrinsics/5.0.0.0": {
+        "compile": {
+          "System.Runtime.Intrinsics.dll": {}
+        },
+        "compileOnly": true
+      },
       "System.Runtime.Loader/5.0.0.0": {
         "compile": {
           "System.Runtime.Loader.dll": {}
@@ -7345,6 +7352,11 @@
       "sha512": ""
     },
     "System.Runtime.InteropServices.RuntimeInformation.Reference/5.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Intrinsics/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

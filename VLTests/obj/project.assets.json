@@ -11377,23 +11377,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\y.vazquez\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Yunior\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VLTests\\VLTests.csproj",
+      "projectUniqueName": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\VLTests\\VLTests.csproj",
       "projectName": "VLTests",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VLTests\\VLTests.csproj",
-      "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VLTests\\obj\\",
+      "projectPath": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\VLTests\\VLTests.csproj",
+      "packagesPath": "C:\\Users\\Yunior\\.nuget\\packages\\",
+      "outputPath": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\VLTests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\y.vazquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yunior\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11407,8 +11403,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VL\\VL.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VL\\VL.csproj"
+            "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\VL\\VL.csproj": {
+              "projectPath": "D:\\DOCUMENTACION\\Trabajo\\Net.Core-Training\\VL\\VL.csproj"
             }
           }
         }
@@ -11491,7 +11487,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -27,6 +27,8 @@ namespace VLTests
         #region Configuring DBContext
 
         private readonly WebApplicationFactory<Startup> _factory;
+        private readonly VLDBContext _context;
+
 
         public UserControllerTests(WebApplicationFactory<Startup> factory)
         {
@@ -37,6 +39,10 @@ namespace VLTests
                     services.AddDbContext<VLDBContext>(options => { options.UseInMemoryDatabase("InMemory"); });
                 });
             });
+
+            var dbContexOoptions = new DbContextOptionsBuilder<VLDBContext>().UseInMemoryDatabase("VlDatabase").Options;
+            _context = new VLDBContext(dbContexOoptions);
+            _context.Database.EnsureCreated();
         }
 
         #endregion
@@ -68,10 +74,12 @@ namespace VLTests
             // arrange
             var mockMapper = new Mock<IMapper>();
             var mockLogger = new Mock<ILoggerManager>();
+            var mockConetxFactory = new Mock<IDbContextFactory<VLDBContext>>();
+            mockConetxFactory.Setup(m=>m.CreateDbContext()).Returns(_context);
 
-            var context = CreateDbContext();
+            //var context = CreateDbContext();
 
-            var service = new UserService(context.Object, mockMapper.Object, mockLogger.Object);
+            var service = new UserService(mockConetxFactory.Object, mockMapper.Object, mockLogger.Object);
 
             var controller = new UsersController(service,mockLogger.Object);
 

@@ -27,3 +27,13 @@ F:\WORK\MAIN\BACKEND_TEST\FromDevOps\LoggerService\obj\Debug\netcoreapp3.1\Logge
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CoreCompileInputs.cache
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.deps.json
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.dll
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.pdb
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.AssemblyReference.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfoInputs.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfo.cs
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CoreCompileInputs.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb

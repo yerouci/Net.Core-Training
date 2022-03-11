@@ -27,3 +27,13 @@ F:\WORK\MAIN\BACKEND_TEST\FromDevOps\MailingService\obj\Debug\netcoreapp3.1\Mail
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\MailingService\obj\Debug\netcoreapp3.1\MailingService.csproj.CoreCompileInputs.cache
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\MailingService\obj\Debug\netcoreapp3.1\MailingService.dll
 F:\WORK\MAIN\BACKEND_TEST\FromDevOps\MailingService\obj\Debug\netcoreapp3.1\MailingService.pdb
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\bin\Debug\netcoreapp3.1\MailingService.deps.json
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\bin\Debug\netcoreapp3.1\MailingService.dll
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\bin\Debug\netcoreapp3.1\MailingService.pdb
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.csproj.AssemblyReference.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.AssemblyInfoInputs.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.AssemblyInfo.cs
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.csproj.CoreCompileInputs.cache
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.dll
+D:\DOCUMENTACION\Trabajo\Net.Core-Training\MailingService\obj\Debug\netcoreapp3.1\MailingService.pdb
