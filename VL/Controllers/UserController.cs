@@ -48,6 +48,11 @@ namespace VL.Controllers
         [HttpDelete("{userId}")]
         public async Task<IActionResult> DeleteUser([FromRoute] Guid userId)
         {
+            //Adding validation for testing with xUnit
+            if (userId == Guid.Empty)
+            {
+                return NotFound("An userId must be Specified!!!");
+            }
             await _userService.DeleteAsync(userId);
             _logger.LogInfo($"Action: Deleted user with ID: {userId.ToString()}");
             return NoContent();

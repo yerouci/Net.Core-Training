@@ -17,17 +17,19 @@ using AutoMapper;
 using System.Net;
 using VL.Exceptions;
 
+
+
 namespace VL.Services
 {
     public class BookService : IBookService
     {
         private ILoggerManager _logger;
-        protected VLDBContext _dbcontext { get; set; }
         private readonly IMapper _mapper;
+        IDbContextFactory<VLDBContext> _dbContextFactory;
 
-        public BookService(VLDBContext dbcontext, ILoggerManager logger, IMapper mapper)
+        public BookService(IDbContextFactory<VLDBContext> contextFactory, ILoggerManager logger, IMapper mapper)
         {
-            this._dbcontext = dbcontext;
+            _dbContextFactory = contextFactory;
             _logger = logger;
             _mapper = mapper;
         }
@@ -36,7 +38,8 @@ namespace VL.Services
         {
             try
             {
-                var query = _dbcontext.Books.Select(s => new BookDTO
+                await using var dbcontext = _dbContextFactory.CreateDbContext();
+                var query = dbcontext.Books.Select(s => new BookDTO
                 {
                     Title = s.Title,
                     AuthorName = s.Author.Name,
@@ -54,17 +57,15 @@ namespace VL.Services
                 {
                     var sortingOrder = queryParameters.Sort.Value ? "ascending" : "descending";
                     orderQueryBuilder.Append($"{sortFiledName} {sortingOrder} ");
-
                     query = query.OrderBy(orderQueryBuilder.ToString());
-
                 }
 
                 /*Logging the query to evaluate efficiency*/
                 _logger.LogInfo($"Query: {query.ToQueryString() } ");
 
                 var booksResult = await PagedList<BookDTO>.ToPagedList(query,
-                    queryParameters.Offset,
-                    queryParameters.Limit);
+                queryParameters.Offset,
+                queryParameters.Limit);
 
                 return new
                 {
@@ -87,17 +88,20 @@ namespace VL.Services
             {
                 _logger.LogError(e.Message);
                 throw new RestException(HttpStatusCode.InternalServerError,
-                    "An unexpected error occurred while trying to perform the operation: Get All Books.");
+                "An unexpected error occurred while trying to perform the operation: Get All Books.");
             }
-            
+
         }
+
+
 
 
         public async Task<Object> GetReviews(ReviewsParameters queryParameters, int id)
         {
             try
             {
-                var query = _dbcontext.Reviews.Where(w => _dbcontext.Books.Any(b => b.Id == id && b.Reviews.Any(a => a.Id == w.Id))).Select(s => new ReviewDTO
+                await using var dbcontext = _dbContextFactory.CreateDbContext();
+                var query = dbcontext.Reviews.Where(w => dbcontext.Books.Any(b => b.Id == id && b.Reviews.Any(a => a.Id == w.Id))).Select(s => new ReviewDTO
                 {
                     Id = s.Id,
                     BookId = id,
@@ -106,8 +110,6 @@ namespace VL.Services
                     Date = s.Date,
                     Qualification = (int)s.Qualification
                 }).Where(FilterReviews.GetFiltersExpression(queryParameters));
-
-
 
                 /*Apply sort if needed*/
                 var orderQueryBuilder = new StringBuilder();
@@ -118,15 +120,14 @@ namespace VL.Services
                     orderQueryBuilder.Append($"{sortFiledName} {sortingOrder} ");
 
                     query = query.OrderBy(orderQueryBuilder.ToString());
-
                 }
-
+                
                 /*Logging the query to evaluate efficiency*/
                 _logger.LogInfo($"Query: {query.ToQueryString() } ");
 
                 var reviewsResult = await PagedList<ReviewDTO>.ToPagedList(query,
-                    queryParameters.Offset,
-                    queryParameters.Limit);
+                queryParameters.Offset,
+                queryParameters.Limit);
 
                 return new
                 {
@@ -143,40 +144,39 @@ namespace VL.Services
             {
                 _logger.LogError(e.Message);
                 throw new RestException(HttpStatusCode.InternalServerError,
-                    "An unexpected error occurred while trying to perform the operation: Get Reviews.");
+                "An unexpected error occurred while trying to perform the operation: Get Reviews.");
             }
-            
-        }
 
+        }
 
         public async Task<Review> AddReview(int bookId, string userId, ReviewInputDTO input)
         {
 
             var review = _mapper.Map<Review>(input);
-
-            var user = _dbcontext.Users.FirstOrDefault(a => a.Id.Equals(Guid.Parse(userId)));
+            await using var dbcontext = _dbContextFactory.CreateDbContext();
+            var user = dbcontext.Users.FirstOrDefault(a => a.Id.Equals(Guid.Parse(userId)));
             if (user == null)
             {
                 _logger.LogError($"Error: An unexpected error occurred at trying to get user with ID: {userId.ToString()}.");
                 throw new RestException(HttpStatusCode.NotFound,
-                    $"The provided identifier: {userId} does not match any user.");
+                $"The provided identifier: {userId} does not match any user.");
             }
 
             review.Date = DateTime.UtcNow;
             review.User = user;
             try
             {
-                var result = _dbcontext.Reviews.Add(review);
+                var result = dbcontext.Reviews.Add(review);
 
-                var book = _dbcontext.Books
-                    .Include(i => i.Reviews)
-                    .FirstOrDefault(w => w.Id.Equals(bookId));
+                var book = dbcontext.Books
+                .Include(i => i.Reviews)
+                .FirstOrDefault(w => w.Id.Equals(bookId));
 
                 book.Reviews.Add(result.Entity);
                 book.Qualification = CalculateQualification(book.Reviews);
-                _dbcontext.Books.Update(book);
+                dbcontext.Books.Update(book);
 
-                await _dbcontext.SaveChangesAsync();
+                await dbcontext.SaveChangesAsync();
 
                 return result.Entity;
             }
@@ -184,18 +184,17 @@ namespace VL.Services
             {
                 _logger.LogError(e.Message);
                 throw new RestException(HttpStatusCode.InternalServerError,
-                    "An unexpected error occurred while trying to perform the operation: Add Review.");
+                "An unexpected error occurred while trying to perform the operation: Add Review.");
             }
         }
 
-        private int CalculateQualification(ICollection<Review> reviews) 
+        private int CalculateQualification(ICollection<Review> reviews)
         {
             int aux = 0;
             foreach (var review in reviews)
             {
                 aux += (int)review.Qualification;
             }
-
             return aux / reviews.Count;
         }
 

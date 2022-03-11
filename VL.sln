@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailingService", "MailingService\MailingService.csproj", "{F7C7B74E-DF13-426E-ADAB-7111DF3ACD9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{870E538F-8783-4153-BF8F-FB54F8A7DB75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{870E538F-8783-4153-BF8F-FB54F8A7DB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLTests", "VLTests\VLTests.csproj", "{76555E00-9500-4F18-9A09-A50386C888A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{870E538F-8783-4153-BF8F-FB54F8A7DB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{870E538F-8783-4153-BF8F-FB54F8A7DB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{870E538F-8783-4153-BF8F-FB54F8A7DB75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76555E00-9500-4F18-9A09-A50386C888A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76555E00-9500-4F18-9A09-A50386C888A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76555E00-9500-4F18-9A09-A50386C888A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76555E00-9500-4F18-9A09-A50386C888A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wyWdKUXv7q+xDKy3LS8keCSFujOTrxJi5C2ZqDJqB9Kxo0FWKYKaxOYNdNikKiE5w2S0tKebA0yQLiOkh0RIyw==",
+  "dgSpecHash": "KpcuFEsmbJ5AjU1l04MkswtUkuLrRVzLHPvSuFnkt0gOjDjx26eiBPCrJzinVIDGBZwqUQ4NwwL+F7YvBC4kKg==",
   "success": true,
-  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj",
+  "projectFilePath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\MailingService\\MailingService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -5940,11 +5940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj",
+      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj",
+      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\obj\\",
+      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6018,7 +6018,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

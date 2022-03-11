@@ -9041,11 +9041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\VL.csproj",
+      "projectUniqueName": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VL\\VL.csproj",
       "projectName": "VL",
-      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\VL.csproj",
+      "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VL\\VL.csproj",
       "packagesPath": "C:\\Users\\y.vazquez\\.nuget\\packages\\",
-      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\VL\\obj\\",
+      "outputPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\VL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9065,14 +9065,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\Entities\\Entities.csproj"
+            "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj": {
+              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\Entities\\Entities.csproj"
             },
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\LoggerService\\LoggerService.csproj"
+            "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\LoggerService\\LoggerService.csproj"
             },
-            "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj": {
-              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\Net.Core-Training\\MailingService\\MailingService.csproj"
+            "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\MailingService\\MailingService.csproj": {
+              "projectPath": "F:\\WORK\\MAIN\\BACKEND_TEST\\FromDevOps\\MailingService\\MailingService.csproj"
             }
           }
         }
@@ -9120,6 +9120,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.22, 3.1.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -9128,7 +9134,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
