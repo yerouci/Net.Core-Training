@@ -19,24 +19,35 @@ namespace VLTests
     {
         private BooksController _booksController;
         private IBookService _booksService;
+        private readonly VLDBContext _dbContext;
         
         public BookControllerTests()
         {
             var mockLogger = new Mock<ILoggerManager>();
             var mockMapper = new Mock<IMapper>();
 
-            var dbContextFactory = new Mock<IDbContextFactory<VLDBContext>>();
-
+        
             var connection = new SqliteConnection("Filename=:memory:");
             connection.Open();
             var options = new DbContextOptionsBuilder<VLDBContext>()
                 .UseSqlite(connection).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                 .Options;
+
+             _dbContext = new VLDBContext(options);
+            var dbContextFactory = new Mock<IDbContextFactory<VLDBContext>>();
+            dbContextFactory.Setup(m=>m.CreateDbContext()).Returns(_dbContext);
+
             _booksService = new BookService(dbContextFactory.Object, mockLogger.Object, mockMapper.Object);
             
             _booksController = new BooksController(_booksService,mockLogger.Object);
             
-            //FillDataBase().Wait();
+             FillDataBase().Wait();
+        }
+
+        public async Task FillDataBase()
+        {
+            ///Falta codigo aqui
+            await  _dbContext.SaveChangesAsync();
         }
     }
 }
