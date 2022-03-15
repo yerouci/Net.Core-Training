@@ -67,20 +67,20 @@ namespace VL.Services
                 queryParameters.Offset,
                 queryParameters.Limit);
 
-                return new
+                return new ResponseDto<BookPaginatedDto>
                 {
-                    booksResult.TotalCount,
-                    booksResult.PageSize,
-                    booksResult.CurrentPage,
-                    booksResult.TotalPages,
-                    booksResult.HasNext,
-                    booksResult.HasPrevious,
-                    rows = booksResult.Select(s => new //Querying the object to send only the necessary fields to the front
+                    TotalCount= booksResult.TotalCount,
+                    PageSize = booksResult.PageSize,
+                    CurrentPage = booksResult.CurrentPage,
+                    TotalPages = booksResult.TotalPages,
+                    HasNext = booksResult.HasNext,
+                    HasPrevious = booksResult.HasPrevious,
+                    Data = booksResult.Select(s => new BookPaginatedDto//Querying the object to send only the necessary fields to the front
                     {
-                        s.Title,
-                        s.AuthorName,
-                        s.EditorialName,
-                        s.ISBN
+                        Title= s.Title,
+                        AuthorName = s.AuthorName,
+                        EditorialName = s.EditorialName,
+                         ISBN = s.ISBN
                     })
                 };
             }

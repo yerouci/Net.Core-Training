@@ -302,7 +302,7 @@
               "target": "Package",
               "version": "[5.0.15, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.15, )"
             },
